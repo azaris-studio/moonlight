@@ -238,8 +238,10 @@ input[type="text"] {
 .box-3 {
   grid-row: span 1 ;
   grid-column: span 1;
-   background-color: #c3c3c3a9;
+  background-color: #060a30;
 }
+
+
 .box-4{
   grid-row:span 1;
   grid-column: span 2;
