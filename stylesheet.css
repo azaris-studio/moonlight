@@ -1,0 +1,316 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+    
+}
+
+.WELCOME{
+/*heading*/
+  display: flex;
+  font-family:Arial, Helvetica, sans-serif;
+  justify-content: center; /* Centers items horizontally */
+  flex-direction: column;
+  align-items: center; /* Centers items vertically */
+  height: 50vh; /* Example to make the container full height */
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: x-large;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.explore-button {
+  /* Layout */
+  display: inline-block;
+  padding: 15px 30px;
+  
+  /* Colors - High Contrast */
+  background-color: #0d06e7; 
+  color: #000000;            /* Solid Black text */
+  
+  /* Text Style */
+  text-decoration: none;
+font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  
+  /* The "Built" Look */
+  border: 2px solid #000000;
+  border-radius: 0px; /* Square corners feel tougher */
+  cursor: pointer;
+}
+
+/* Simple hover: Just change the color slightly */
+.explore-button:hover {
+  background-color: #595875;
+}
+/* button end*/
+
+.belowheading{
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: stretch;
+  background-color: #060a30;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+}
+
+.wordhead{
+  display:flexbox;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  font-size: xx-large;
+  font-weight: 400px;
+}
+
+.homepage {
+/* background: rgb(0,5, 22); */
+ background:linear-gradient(rgb(0,5,22), rgb(23, 23, 59)); 
+ font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*START OF NAV CODE*/
+.nav {
+  display: flex; /* Flexbox layout for side-by-side sections */
+  min-height: 10vh; /* Make sure the container fills the viewport height */
+
+}
+
+.navlinks {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Vertically aligns items in the center */
+  padding: 20px, 20px; 
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(240, 240, 240, 0); /* clear background color */
+
+
+}
+.navlinks {
+  list-style: none; /* Remove bullet points from the list */
+  display: flex; /* Use flexbox for the list items */
+  gap: 10px; /* Add space between the links */
+  margin: 10px; /* Remove default margin */
+  padding:30px; /* EDITING GOOD padding */
+  padding-left: 300px;
+  padding-right: 300px;
+ 
+}
+
+.navlinks a {
+  color: rgb(255, 255, 255);
+  font-size:x-large; /* font size */
+  text-decoration: none; /*removes the underline*/
+  font-weight: 700; /*basically bolds the font*/
+font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP";
+}
+.navlinks a:hover {
+  /* This specifically targets the link when the mouse hovers over it */
+  color: #eb63fa; /* A lighter color on hover */
+}
+/* END OF NAV CODE*/
+
+  .header-side {
+  display: flex;
+  /* flex-direction: column;  Stacks search on top of links */
+  align-items: center;    /* Centers everything horizontally */
+  background-color: #f2eeee00; /* Matching your image gray */
+  padding:20px;
+  gap: 40px;              /* Space between search and links */
+  font-family: Arial, sans-serif;
+}
+
+/* Search Bar Styling */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="text"] {
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;     /* Wide padding for that pill look */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Links Styling */
+.user-actions {
+  display: flex;
+  width: 100%;
+  max-width: 300px;       /* Constrain width to match the search bar */
+  justify-content:center; /* Pushes Account and Cart to edges */
+}
+
+.action-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/*end of search*/
+
+
+.set1{
+   display:flexbox;
+  justify-content: center;
+  text-align: center;
+  font-family: Big Shoulders Stencil, sans-serif;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: xx-large;
+  font-weight: 100px;
+}
+
+
+/*BENTO CODE*/
+
+.bento-grid {
+  display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}  
+
+.bento-item {
+  /*background: linear-gradient(rgba(68, 0, 255, 0) 10%, rgb(22, 39, 223) 90%); */ 
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Fonts and edits for grid text */ 
+.bento-item h3{
+ font-family:Arial, Helvetica, sans-serif; 
+  font-size: x-large;
+}
+
+.bento-item p{
+  font-size: medium;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Specific styling for each box */
+.box-1 {
+  grid-row: span 1; /* Spans 2 rows, making it a tall box */
+  grid-column: span 2;
+  font-size: x-large;
+   background-color: #00000085;
+}
+
+.box-2 {
+  grid-column: span 2; /* Spans 2 columns, making it a wide box */
+  grid-row:span 1;
+  background-color: #5e625e8b;
+}
+
+.box-3 {
+  grid-row: span 1 ;
+  grid-column: span 1;
+   background-color: #c3c3c3a9;
+}
+.box-4{
+  grid-row:span 1;
+  grid-column: span 2;
+   background-color: #19264b82;
+}
+.box-5{
+  grid-column: span 1;
+  grid-row: span 2;
+   background-color: #9c9d9c77;
+}
+   .box-6{
+  grid-column: span 3;
+  grid-row: span 1;
+   background-color: #256bc679;
+}
+
+
+/* START OF FOOTER CSS CODE */ 
+.soratech-footer {
+  background-color: #000565; 
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  border-top: 5px solid #969696; /* accent line  */
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #ffffff; /* Use the same yellow for headings */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7b7b7b;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #0b7f00;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff;
+  font-size: 12px;
+  color: #ffffff;
+}
