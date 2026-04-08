@@ -711,7 +711,6 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Use flexbox to center content inside each box */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -719,7 +718,7 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
   text-align: center;
 }
 
-.boxU1{
+.boxU1k{
   grid-column: span 4;
   grid-row: span 1;
 }
@@ -733,19 +732,19 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
   font-family:Arial, Helvetica, sans-serif;
 }
 
-.boxU2{
+.boxU2k{
   grid-column: span 1;
   grid-row: span 1;
 }
 
 
-.boxU3{
+.boxU3k{
   grid-column: span 1;
   grid-row: span 1;
 }
 
 
-.boxU4{
+.boxU4k{
   grid-column: span 1;
   grid-row: span 1;
 }
@@ -753,12 +752,11 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
 .tier{
       font-size: x-large;
    font-family: "Geo", sans-serif;
-}
+   }
 
-.boxU5{
+.boxU5k{
   grid-column: span 1;
   grid-row: span 1;
-  background-color: white;
 }
 
 .gamepc{
@@ -774,6 +772,10 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
 .whycho{
   font-family:"Geo",  sans-serif;
   font-size: xx-large;
+}
+
+.boxU6k{
+  background-color: #00000000;
 }
 
 .boxU10{
