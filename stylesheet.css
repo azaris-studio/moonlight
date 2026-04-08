@@ -43,13 +43,13 @@
   padding: 15px 30px;
   
   /* Colors - High Contrast */
-  background-color: #0d06e7; 
-  color: #000000;            /* Solid Black text */
+  background-color: #0f0c69; 
+  color: #ffffff;            /* Solid Black text */
   
   /* Text Style */
   text-decoration: none;
-font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;
+font-family: "Rubik Glitch", sans-serif;
+  font-weight: lighter;
   font-size: 16px;
   text-transform: uppercase;
   
@@ -68,9 +68,10 @@ font-family:Arial, Helvetica, sans-serif;
 .belowheading{
   font-family:Arial, Helvetica, sans-serif;
   display: flex;
-  justify-content: stretch;
-  background-color: #060a30;
-  padding: 3rem 2rem;
+  justify-content: center;
+  background-color: #5d68c44a;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: 2rem 0;
 }
 
@@ -87,7 +88,7 @@ font-family:Arial, Helvetica, sans-serif;
 
 .homepage {
 /* background: rgb(0,5, 22); */
- background:linear-gradient(rgb(0,5,22), rgb(23, 23, 59)); 
+ background:linear-gradient( #bdd8e9, #7bbde8, #6ea2b3, #49769f, #0a4174, #001d39); 
  font-family:Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -123,11 +124,11 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 .navlinks a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size:x-large; /* font size */
   text-decoration: none; /*removes the underline*/
   font-weight: 700; /*basically bolds the font*/
-font-family:Arial, Helvetica, sans-serif;
+font-family: "Big Shoulders Stencil", sans-serif;
   font-style: normal;
   font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP";
 }
@@ -229,8 +230,8 @@ input[type="text"] {
 
 /* Fonts and edits for grid text */ 
 .bento-item h3{
- font-family:Arial, Helvetica, sans-serif; 
-  font-size: x-large;
+ font-family: "Geo", sans-serif; 
+  font-size: xx-large;
 }
 
 .bento-item p{
@@ -353,7 +354,7 @@ background: linear-gradient( to bottom, #977dff, #f2e6ee, #0033ff, #00033d); /* 
 }
 
 .productheader{
-  font-family:Rubik Glitch, sans-serif;
+  font-family:Geo, sans-serif;
   font-weight: lighter;
 }
 
@@ -492,7 +493,8 @@ background: linear-gradient( to bottom, #977dff, #f2e6ee, #0033ff, #00033d); /* 
 
 .title{
   color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Geo", sans-serif ;
+  font-size: xx-large;
 }
 
 .desc{
@@ -783,7 +785,7 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
 }
 
 .button{
-   font-size: xx-large;
+   font-size: x-large;
    font-family: "Geo", sans-serif;
 }
 
@@ -803,10 +805,11 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
   letter-spacing: 1px;
   
   /* Visuals */
-  color: #000000;
-  background-color: #c6ff33;
+  color: #ffffff;
+  background-color: #151e87;
   border: 2px solid #ffffff;
   border-radius: 5px;
+  
   
   /* Animation */
   transition: all 0.3s ease;
@@ -814,7 +817,7 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
 
 /* Hover effect: Inverts the colors */
 .purchaseg-button:hover {
-  background-color: #7d39eb;
+  background-color: #c6ff33 ;
   color: #000000;
   transform: translateY(-2px); /* Lifts the button slightly */
 }
