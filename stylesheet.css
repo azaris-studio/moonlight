@@ -2,7 +2,24 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents accidental horizontal scrolling */
-    
+}
+.geo-regular {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.big-shoulders-stencil{
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
 }
 
 .WELCOME{
@@ -316,3 +333,546 @@ input[type="text"] {
   font-size: 12px;
   color: #ffffff;
 }
+
+/*END OF FOOTER
+/*-----------------------------------------------------------------------------------------*/
+/*PRODUCT  ENTERPRISE PAGE */
+.productpage{
+background: linear-gradient( to bottom, #977dff, #f2e6ee, #0033ff, #00033d); /* linear gradient */ 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.header{
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  color: white;
+  font-size: large;
+}
+
+.productheader{
+  font-family:Rubik Glitch, sans-serif;
+  font-weight: lighter;
+}
+
+.nav {
+  display: flex; /* Flexbox layout for side-by-side sections */
+  min-height: 10vh; /* Make sure the container fills the viewport height */
+
+}
+
+.navbuttons {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Vertically aligns items in the center */
+  padding: 20px, 20px; 
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(240, 240, 240, 0); /* clear background color */
+
+
+}
+.navbuttons {
+  list-style: none; /* Remove bullet points from the list */
+  display: flex; /* Use flexbox for the list items */
+  gap: 10px; /* Add space between the links */
+  margin: 10px; /* Remove default margin */
+  padding:30px; /* EDITING GOOD padding */
+  padding-left: 300px;
+  padding-right: 300px;
+ 
+}
+
+.nav-button {
+  /* Layout */
+  display: inline-block;
+  padding:20px 50px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #ffffff;
+  background-color: #151e87;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.nav-button:hover {
+  background-color: #1e455e;
+  color: #ffffff;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+.nav2-button {
+  /* Layout */
+  display: inline-block;
+  padding:20px 50px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #ffffff;
+  background-color: #151e87;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.nav2-button:hover {
+  background-color: #1e455e;
+  color: #ffffff;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+/*BENTO CODE FOR SORA-X1 PC*/
+.bento-grid2 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 3 equal rows */
+  gap: 0.5rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item2 {
+  border: 2px solid #000000;
+  color: #ffffff;
+  padding: 1rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.headers{
+  font-family: Arial, Helvetica, sans-serif;
+ /* font-size: large; */
+  justify-content: center;
+}
+
+.boxtog{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.boxpro{
+  grid-column: span 5;
+  grid-row: span 1;
+  justify-content: center;
+/*  background: radial-gradient(circle, #191f3a, #2005a9) /* radical gradient */ 
+}
+
+.title{
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.desc{
+    color: #000000;
+}
+
+/* Specific styling for each box */
+.box1 {
+grid-row: span 1; /* Spans 2 rows, making it a tall box */
+grid-column: span 5;
+justify-content: center;
+  /* background-color: #27e5eca4; */
+}
+
+.box2 {
+  grid-column: span 2; /* Spans 2 columns, making it a wide box */
+  grid-row: span 1;
+  justify-content: center;
+ /*   background-color: #0c0c16; */
+}
+
+.headersp{
+    color: #000000;
+}
+
+.headersm{
+    color: #000000;
+}
+
+
+.box3 {
+  grid-column: span 1;
+  grid-row: span 1;
+justify-content: center;
+ /*  background-color: #c9e8ffa7; */
+}
+
+.workPC{
+  width: 300px;
+  height:300px;
+}
+
+.box4{
+    grid-column: span 2;
+  grid-row:span 1;
+   /* background-color: #0a4174; */
+     justify-content: center;
+}
+
+.box5{
+  grid-column: span 2;
+  grid-row:span 1;
+  justify-content: center;
+  /*   background-color: #4e8ea2; */
+}
+
+.box6{
+  grid-column: span 1;
+  grid-row:span 1;
+    /* background-color: #49769f; */
+     justify-content: center;
+}
+
+.box7{
+  grid-column: span 2;
+  grid-row:span 1;
+  justify-content: center;
+   /*   background-color: #06363d; */
+}
+
+.box8{
+  grid-column: span 1;
+  grid-row:span 1;
+   background-color: #ffffff; 
+      justify-content: center;
+}
+
+.cloud{
+  width: 200px;
+  height:200px;
+}
+
+.box9{
+  grid-column: span 2;
+  grid-row:span 1;
+  /* background: linear-gradient( to bottom, #f2e6ee, #977dff, #7226ff);  linear gradient */ 
+      justify-content: center;
+}
+
+.headers9{
+  color: #ffffff;
+}
+
+.box10{
+  grid-column: span 1;
+  grid-row:span 1;
+  /*    background-color: #84babfc2; */
+      justify-content: center;
+}
+
+.box12{
+  grid-column: span 1;
+  grid-row: span 1;
+/* background: linear-gradient(to bottom, #ffccf3, #977dff, #0033ff); /* radical gradient */ 
+}
+
+.box13{
+  grid-column: span 1;
+  grid-row: span 1;
+/* background: linear-gradient(to bottom, #977dff, #0033ff, #0b00ab); */
+  justify-content: center;
+}
+
+.box14{
+  grid-column: span 1;
+  grid-row: span 1;
+  /* background-color: #0b7f00; */
+}
+
+.box15{
+  grid-column: span 1;
+  grid-row: span 1;
+  /* background-color: #0b7f00; */ 
+  justify-content: center;
+}
+
+.box16{
+  grid-column: span 1;
+  grid-row: span 1;
+ /* background-color: #0b7f00; */
+}
+
+.box17{
+  grid-column: span 1;
+  grid-row: span 1;
+ /* background-color: #0b7f00; */
+  justify-content: center;
+}
+
+.box11{ /*PURCHASE BLOCK*/ 
+  grid-column: span 5 ;
+  grid-row:span 1; 
+  background-color: #0c0c1699;
+}
+
+/*PURCHASE BUTTON */
+.purchase-button {
+  /* Layout */
+  display: inline-block;
+  padding:20px 50px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #ffffff;
+  background-color: #151e87;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.purchase-button:hover {
+  background-color: #1e455e;
+  color: #ffffff;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+/*end of PURCHASE BUTTON*/
+
+/*END OF BENTO CODE FOR PRODUCT*/
+
+/*END OF PRODUCT ENTERPRISE PAGE */ 
+
+/*START OF GAMER PRODUCT PAGE */
+
+.gamerpage{
+  margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0927, #500a1f); /* linear gradient */ 
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.bento-grid3 {
+  display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90%;
+  padding-top: 200px;
+  margin: 20px auto;
+}
+
+.bento-item3 {
+  background-color: #f0f8ff00;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.boxU1{
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.intro{
+ font-family:"Geo",  sans-serif;
+ font-size: xx-large;
+}
+
+.intro2{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.boxU2{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+
+.boxU3{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+
+.boxU4{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tier{
+      font-size: x-large;
+   font-family: "Geo", sans-serif;
+}
+
+.boxU5{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+}
+
+.gamepc{
+  width: 290px;
+  height: 290px;
+}
+
+.boxtil{
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.whycho{
+  font-family:"Geo",  sans-serif;
+  font-size: xx-large;
+}
+
+.boxU10{
+    grid-column: span 4;
+  grid-row: span 1;
+}
+
+.Eco{
+     font-size: x-large;
+   font-family: "Geo", sans-serif;
+}
+
+
+.boxU11{
+    grid-column: span 4;
+  grid-row: span 1;
+}
+
+.button{
+   font-size: xx-large;
+   font-family: "Geo", sans-serif;
+}
+
+
+/*PURCHASE BUTTON */
+.purchaseg-button {
+  /* Layout */
+  display: inline-block;
+  padding:20px 50px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #000000;
+  background-color: #c6ff33;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.purchaseg-button:hover {
+  background-color: #7d39eb;
+  color: #000000;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+.soratech-footerg {
+  background-color: #00056500; 
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  border-top: 5px solid #969696; /* accent line  */
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #ffffff; /* Use the same yellow for headings */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7b7b7b;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #0b7f00;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff;
+  font-size: 12px;
+  color: #ffffff;
+}
+
