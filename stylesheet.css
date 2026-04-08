@@ -879,3 +879,184 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
   color: #ffffff;
 }
 
+/*START OF PURCHASE PAGE*/
+
+.purchasespage{
+background: linear-gradient( to bottom, #Fccbf0, #e02f74, #6700a3, #050c38); /* linear gradient */ 
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.purchaseheader{
+  color: white;
+text-align: center;
+font-size: xx-large;
+padding-top: 100px;
+padding-bottom: 10px;
+font-family: "Geo", sans-serif;
+}
+
+.bento-grid4 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item4 {
+  border: 0.5px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Base styles for standard text inputs */
+.input-text {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color when clicked */
+.input-text:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.boxT1 {
+  grid-column: span 1;
+  grid-row: span 1;
+ background: rgba(13, 15, 153, 0);
+}
+
+.boxT2 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgba(13, 15, 153, 0);
+}
+
+.boxT3 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgba(13, 15, 153, 0);
+}
+
+.boxT4{
+  grid-column: span 1;
+  grid-row: span 1;
+     background: rgba(13, 15, 153, 0);
+}
+
+
+
+/* Specific styling for the email field */
+.input-email {
+  width: 100px;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Subtle glow when a valid email is entered */
+.input-email:valid:not(:placeholder-shown) {
+  border-color: #28a745;
+}
+
+.error-msg {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none; /* Hidden by default */
+}
+
+/* When an input is invalid, we can use JS to show the sibling error-msg */
+.input-invalid + .error-msg {
+  display: block;
+}
+
+.boxT5 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgba(13, 15, 153, 0);
+}
+
+/* Styling the dropdown box */
+.select-dropdown {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none; /* Removes default browser arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="grey" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+.select-dropdown:hover {
+  border-color: #888;
+}
+
+.boxT6{
+     background: rgba(13, 15, 153, 0);
+}
+
+.boxT7{
+  grid-column: span 2;
+  grid-row: span 2;
+   background: rgba(13, 15, 153, 0);
+   justify-content: center;
+}
+
+/* Styling the submit button */
+.custom-submit-btn {
+  /* Layout and Sizing */
+  padding: 14px 70px;
+  font-size: 16px;
+  font-weight: 600;
+  
+  /* Colors and Borders */
+  background-color:#0033ff; /* A clean blue */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-family: Rubik Glitch, system-ui;
+  font-weight: lighter;  
+  /* Interaction */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover effect: Darkens the blue when the mouse is over it */
+.custom-submit-btn:hover {
+  background-color: #c6ff33;
+  color: #000000;
+}
+
+/* Active effect: Slight "push" feel when clicked */
+.custom-submit-btn:active {
+  transform: scale(0.98);
+}
