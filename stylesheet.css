@@ -61,8 +61,14 @@ font-family: "Rubik Glitch", sans-serif;
 
 /* Simple hover: Just change the color slightly */
 .explore-button:hover {
-  background-color: #595875;
+  background-color: #c6ff33; 
+  color: #000000;
+    border-color: #000000;
+    transform: translateY(-2px); /* Lifts the button slightly */
+  /* Animation */
+  transition: all 0.4s ease;
 }
+
 /* button end*/
 
 .belowheading{
@@ -410,8 +416,9 @@ background: linear-gradient( to bottom, #977dff, #f2e6ee, #0033ff, #00033d); /* 
 
 /* Hover effect: Inverts the colors */
 .nav-button:hover {
-  background-color: #1e455e;
-  color: #ffffff;
+  background-color: #c6ff33; 
+  color: #000000;
+    border-color: #000000;
   transform: translateY(-2px); /* Lifts the button slightly */
 }
 
@@ -440,8 +447,8 @@ background: linear-gradient( to bottom, #977dff, #f2e6ee, #0033ff, #00033d); /* 
 
 /* Hover effect: Inverts the colors */
 .nav2-button:hover {
-  background-color: #1e455e;
-  color: #ffffff;
+  background-color: #c6ff33;
+  color: #000000;
   transform: translateY(-2px); /* Lifts the button slightly */
 }
 
@@ -666,8 +673,9 @@ justify-content: center;
 
 /* Hover effect: Inverts the colors */
 .purchase-button:hover {
-  background-color: #1e455e;
-  color: #ffffff;
+  background-color: #c6ff33;
+  border-color: #000000;
+  color: #000000;
   transform: translateY(-2px); /* Lifts the button slightly */
 }
 /*end of PURCHASE BUTTON*/
@@ -818,6 +826,7 @@ background: linear-gradient( to bottom, #09d8c7, #17364f, #0d1a2f, #411e3a, #bd0
 /* Hover effect: Inverts the colors */
 .purchaseg-button:hover {
   background-color: #c6ff33 ;
+    border-color: #000000;
   color: #000000;
   transform: translateY(-2px); /* Lifts the button slightly */
 }
@@ -1054,6 +1063,7 @@ font-family: "Geo", sans-serif;
 .custom-submit-btn:hover {
   background-color: #c6ff33;
   color: #000000;
+    border-color: #000000;
 }
 
 /* Active effect: Slight "push" feel when clicked */
@@ -1267,3 +1277,327 @@ border-radius: 3%;
 }
 
 /*---------------END OF ABOUT PAGE --------------------*/ 
+
+/*------------------------START OF CONTACT US PAGE -------------*/ 
+
+.contactTUS{
+   margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient( to bottom, #36ecde, #00203f, #000565, #2f2f2f); /* linear gradient */ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactheader{
+  padding-top: 100px;
+  padding-bottom:  100px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family:Geo, sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+}
+
+.bento-grid6 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item6 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Base styles for standard text inputs */
+.input-text {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color when clicked */
+.input-text:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.boxU1 {
+  grid-column: span 1;
+  grid-row: span 1;
+ background: rgb(13, 15, 153);
+}
+
+.boxU2 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxU3 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxU4{
+  grid-column: span 1;
+  grid-row: span 1;
+     background: rgb(13, 15, 153);
+}
+
+
+/* Specific styling for the email field */
+.input-email {
+  width: 100px;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Subtle glow when a valid email is entered */
+.input-email:valid:not(:placeholder-shown) {
+  border-color: #28a745;
+}
+
+.boxU5 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxU6{
+     grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+   justify-content: center;
+}
+
+
+/* Styling the submit button */
+.custom-submit-btn {
+  /* Layout and Sizing */
+  padding: 14px 70px;
+  font-size: 16px;
+  font-weight: 600;
+  
+  /* Colors and Borders */
+  background-color: #c6ff33; 
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-family: Rubik Glitch, system-ui;
+  font-weight: lighter;  
+  /* Interaction */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.custom-submit-btn:hover {
+  background-color: #db1be5;
+    border-color: #000000;
+}
+
+/* Active effect: Slight "push" feel when clicked */
+.custom-submit-btn:active {
+  transform: scale(0.98);
+}
+
+.thanks{
+  text-align: center;
+  padding-bottom: 50px;
+  color: white;
+  font-family: "Geo", sans-serif;
+}
+
+.bento-grid7 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item7 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------*/
+/* --- RESPONSIVE MOBILE SETTINGS --- */
+
+/* 1. Global Viewport Adjustments */
+@media screen and (max-width: 768px) {
+    
+    /* Navigation: Stack links vertically or center them */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navlinks {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header-side {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .search-wrapper input[type="text"] {
+        width: 80vw; /* Make search bar wider on mobile */
+    }
+
+    /* Adjusting Large Headings */
+    .WELCOME {
+        font-size: large;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto;
+        text-align: center;
+    }
+
+    .wordhead, .set1, .header {
+        font-size: x-large;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* 2. Bento Grid 1 (Home Page) - Stack all to 1 column */
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 3. Bento Grid 2 (Ecliptic Servers) */
+    .bento-grid2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 4. Bento Grid 3 (Apollo Software / Services) */
+    .bento-grid3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .boxS1, .boxS2, .boxS3, .boxS4, .boxS5, .boxS6, .boxS7, .boxS8, .boxS9, .boxS10, .boxS11, .boxS12, .boxS13, .boxS14, .boxS15 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 5. Bento Grid 4 (Purchase Page) */
+    .bento-grid4 {
+        grid-template-columns: 1fr;
+    }
+
+    .boxT1, .boxT2, .boxT3, .boxT4, .boxT5, .boxT6, .boxT7 {
+        grid-column: span 1 !important;
+    }
+
+    /* 6. Bento Grid 5 (About Us Page) */
+    .bento-grid5 {
+        grid-template-columns: 1fr;
+    }
+
+    .boxV1, .boxV2, .boxV3, .boxV4, .boxV5, .boxV6, .boxV7, .boxV8, .boxV9, .boxV10, .boxV11, .boxV12, .boxV13 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    .logo {
+        width: 90%; /* Scale logo down for mobile */
+        height: auto;
+    }
+
+    /* 7. Bento Grid 6 (Contact Page) */
+    .bento-grid6 {
+        grid-template-columns: 1fr;
+    }
+
+    .boxU1, .boxU2, .boxU3, .boxU4, .boxU5, .boxU6 {
+        grid-column: span 1 !important;
+    }
+
+    /* 8. Utility Fixes */
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack footer sections */
+        text-align: center;
+    }
+
+    .belowheading {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+}
